@@ -9,7 +9,9 @@ public class ConditionRun {
 		//condition.ex1();
 		//condition.ex2();
 		//condition.ex3();
-		condition.ex4();
+		//condition.ex4();
+		//condition.ex5();
+		condition.ex6();
 	}
 
 }

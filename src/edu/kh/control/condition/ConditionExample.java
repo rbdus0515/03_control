@@ -143,6 +143,54 @@ public class ConditionExample {
 		System.out.println(season);
 		
 	}
+	
+	public void ex5() {
+		// 숙제
+		
+		// 나이를 입력 받아
+		// 13세 이하면 "어린이 입니다."
+		// 13세 초과 19세 이하면 : "청소년 입니다."
+		// 19세 초과 시 : "성인 입니다". 출력
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이 : ");
+		int age = sc.nextInt();
+		
+		if(age <= 13) {
+			System.out.println("어린이 입니다.");
+		} else if((age > 13) && (age <=19)) {
+			System.out.println("청소년 입니다.");
+		} else if(age > 19) {
+			System.out.println("성인 입니다.");
+		}
+		
+	}
+	
+	public void ex6() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("점수 : ");
+		int score = sc.nextInt();
+		
+		if(score > 90) {
+			System.out.println("A");
+		} else if(score >= 80 && score < 90) {
+			System.out.println("B");
+		} else if(score >= 70 && score < 80) {
+			System.out.println("C");
+		} else if(score >= 60 && score < 70) {
+			System.out.println("D");
+		} else if( (score < 0) && (score > 100) ){
+			System.out.println("잘못 입력하셨습니다.");
+		} else  {
+			System.out.println("F");
+		
+		}
+		
+	}
+	
 
 }
 
