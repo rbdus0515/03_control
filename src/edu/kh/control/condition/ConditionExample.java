@@ -67,6 +67,7 @@ public class ConditionExample {
 			}
 		}
 	}
+	
 	public void ex3() {
 		
 		// 양수 , 음수 , 0 판별
@@ -168,13 +169,14 @@ public class ConditionExample {
 	}
 	
 	public void ex6() {
+		//숙제
 		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("점수 : ");
 		int score = sc.nextInt();
 		
-		if(score > 90) {
+		if(score > 90 && score < 100) {
 			System.out.println("A");
 		} else if(score >= 80 && score < 90) {
 			System.out.println("B");
@@ -182,18 +184,68 @@ public class ConditionExample {
 			System.out.println("C");
 		} else if(score >= 60 && score < 70) {
 			System.out.println("D");
-		} else if( (score < 0) && (score > 100) ){
-			System.out.println("잘못 입력하셨습니다.");
-		} else  {
+		} else if(score < 60 && score > 0 ) {
 			System.out.println("F");
-		
+		} else {
+			System.out.println("잘못 입력하셨습니다.");
 		}
 		
+		/*if(score > 90) {
+			System.out.println("A");
+			if(score >= 80 && score < 90) {
+				System.out.println("B");
+				if(score >= 70 && score < 80) {
+					System.out.println("C");
+					if(score >= 60 && score < 70) {
+						System.out.println("D");
+						if(score < 60 ) {
+							System.out.println("F");
+						} else if ( (score < 0 ) && (score > 100) ) {
+							System.out.println("잘못 입력하셨습니다.");
+						}
+					}
+				}
+			}
+		}*/
+		
+		/*if ( (score < 0 ) && (score > 100) ) {
+			System.out.println("잘못 입력하셨습니다.");
+		} else if(score > 90) {
+			System.out.println("A");
+		} else if(score >= 80 && score < 90) {
+			System.out.println("B");
+		} else if(score >= 70 && score < 80) {
+			System.out.println("C");
+		} else if(score >= 60 && score < 70) {
+			System.out.println("D");
+		} else if(score < 60 ) {
+			System.out.println("F");
+		} else {
+			System.out.println();
+		}*/
 	}
 	
-
+	public void ex7() {
+		//숙제
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이 입력 : ");
+		int age = sc.nextInt();
+		System.out.print("키 입력 : ");
+		double cm = sc.nextDouble();
+		
+		if((age < 12) && (age > 0)) {
+			System.out.println("적정 연령이 아닙니다.");
+		} else if(cm < 140.0) {
+			System.out.println("적정 키가 아닙니다.");
+		} else if((age >= 12) && (cm >= 140.0)) {
+			System.out.println("탑승 가능");
+		} else {
+			System.out.println("잘못 입력했습니다.");
+		}
+	}
+	
 }
-
 
 
 
