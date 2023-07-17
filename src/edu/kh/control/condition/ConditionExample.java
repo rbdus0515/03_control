@@ -245,6 +245,67 @@ public class ConditionExample {
 		}
 	}
 	
+	public void ex8() {
+		//숙제
+		// 풀고 정상작동까지 하는데 "입력이 되자마자 검사를 진행하여 잘못된 경우 프로그램 종료" 라는 부분은
+		// 모르겠습니다...ㅠㅠ
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("나이 : ");
+		int age = sc.nextInt();
+		System.out.print("키 : ");
+		double cm = sc.nextDouble();
+		
+		/*if((age < 12) && (cm < 140.0)) {
+			System.out.println("나이와 키 모두 적절치 않음");
+		} else if((age < 0) && (age >100)) {
+			System.out.println("나이를 잘못 입력 하셨습니다.");
+		} else if ((cm < 0) && (cm > 250.0)) {
+			System.out.println("키를 잘못 입력 하셨습니다.");
+		} else if((age >= 12) && (cm >= 140.0)) {
+			System.out.println("탑승 가능");
+		} else if(age < 12) {
+			System.out.println("키는 적절하나, 나이는 적절치 않음");
+		} else if(cm < 140.0) {
+			System.out.println("나이는 적절하나, 키가 적절치 않음");
+		} else if((age < 0) || (age >100)) {
+			System.out.println("나이를 잘못 입력 하셨습니다.");
+		}*/ //수정하다 꼬임...ㅜㅠ
+		
+		/*if((age >= 12) && (cm >= 140.0)) {
+			System.out.println("탑승 가능");
+		} else if((age >= 12) && (cm < 140.0)) {
+			System.out.println("나이는 적절하나, 키가 적절치 않음");
+		} else if((age < 12) && (cm >= 140.0)) {
+			System.out.println("키는 적절하나, 나이는 적절치 않음");
+		} else if((age < 12) && (cm < 140.0)) {
+			System.out.println("나이와 키 모두 적절치 않음");
+		} else if((age < 0) && (age >100)) {
+			System.out.println("나이를 잘못 입력 하셨습니다.");
+		} else if((cm < 0) && (cm > 250.0)) {
+			System.out.println("키를 잘못 입력 하셨습니다.");
+		} else {
+			System.out.println("프로그램 종료");
+		}*/// 문제점 나이와 키가 범위에 안들어갔을때 빠져나오지 못함
+		
+		if((age < 0) || (age > 100)) {
+			System.out.println("나이를 잘못 입력 하셨습니다.");
+		} else if((cm < 0) || (cm >250.0)) {
+			System.out.println("키를 잘못 입력 하셨습니다.");
+		} else if((age >= 12) && (cm >= 140.0)) {
+			System.out.println("탑승 가능");
+		} else if((age <= 12) && (cm >= 140.0)) {
+			System.out.println("키는 적절하나, 나이는 적절치 않음");
+		} else if((age >= 12) && (cm < 140.0)) {
+			System.out.println("나이는 적절하나, 키가 적절치 않음");
+		} else if((age < 12) && (cm < 140.0)) {
+			System.out.println("나이와 키 모두 적절치 않음");
+		} else {
+			System.out.println("프로그램 종료");
+		}
+			
+	}
 }
 
 
