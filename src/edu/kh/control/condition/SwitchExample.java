@@ -38,16 +38,43 @@ public class SwitchExample {
 		
 		switch(input) {
 		
-		case 1 : result = "빨강색";
-		case 2 : result = "주황색";
-		case 3 : result = "노란색";
-		case 4 : result = "초록색";
-		default : result = "흰색";
+		case 1 : result = "빨강색"; break;
+		case 2 : result = "주황색"; break;
+		case 3 : result = "노란색"; break;
+		case 4 : result = "초록색"; break;
+		default : result = "흰색"; // 디폴트엔 브레이크 있어도 없어도 상관없음.
 		
 		}
 		
 		System.out.println(result);
 	}
+	
+	public void ex2() {
+		
+		System.out.print("달(월) 입력 : ");
+		int month = sc.nextInt();
+		
+		String result; // 결과 저장 변수 선언
+		
+		switch(month) {
+		case 3 : case 4 : case 5 : result = "봄"; break;
+		case 6 : case 7 : case 8 : result = "여름"; break;
+		case 9 : case 10 : case 11 : result = "가을"; break;
+		case 12 : case 1 : case 2 : result = "겨울"; break;
+		default : result = "잘못 입력"; 
+		}
+		
+		System.out.println(result);
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 
