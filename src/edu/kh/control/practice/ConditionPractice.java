@@ -8,7 +8,7 @@ public class ConditionPractice {
 	
 	public void practice1() {
 
-		// 문제
+		// 문제 1
 		
 		System.out.print("숫자 한 개 입력하세요 : ");
 		int num = sc.nextInt();
@@ -22,6 +22,7 @@ public class ConditionPractice {
 		} else {
 			result = "홀수입니다.";
 		}
+		
 		System.out.println(result);
 	}
 
@@ -41,16 +42,15 @@ public class ConditionPractice {
 		double avg = (kor+math+eng)/3;
 		
 		if(kor < 40 || math < 40 || eng < 40) {
-			if(avg < 60) {
+			if(avg > 0 || avg < 60) {
 				result = "불합격입니다.";
-			}
 		} else {
 			System.out.println("국어 : " + kor);
 			System.out.println("수학 : " + math);
 			System.out.println("영어 : " + eng);
 			System.out.printf("합계 : %d\n" , kor+math+eng);
 			System.out.printf("평균 : %.1f\n" , avg);
-			result = "합격입니다.";
+			result = "축하합니다, 합격입니다.";
 		}
 		
 		
@@ -66,7 +66,7 @@ public class ConditionPractice {
 		int month = sc.nextInt();
 		
 		String result;
-		
+		/*
 		switch(month) {
 		case 1 : result = "1월은 31일까지 있습니다."; break;
 		case 2 : result = "2월은 28일까지 있습니다."; break;
@@ -82,8 +82,14 @@ public class ConditionPractice {
 		case 12 : result = "12월은 31일까지 있습니다."; break;
 		default : result = month + "은(는) 잘못 입력된 달입니다.";
 		}
+		*/
 		
-		System.out.println(result);
+		// 쌤 풀이
+		switch(month) {
+		case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+			System.out.println(month + "월은 30일까지 있습니다.");
+		}
+		
 		
 	}
 	
@@ -148,15 +154,15 @@ public class ConditionPractice {
 			result = "Fail [출석 횟수 부족 (" + (int)tagAV +"/20)]";
 		} else if(sumscore < 70) {
 			System.out.printf("중간 고사 점수(20) : %.1f\n" , MSAV);
-			System.out.printf("기말 고사 점수(20) : %.1f\n" , FSAV);
-			System.out.printf("과제 점수     (20) : %.1f\n" , HWSAV);
+			System.out.printf("기말 고사 점수(30) : %.1f\n" , FSAV);
+			System.out.printf("과제 점수     (30) : %.1f\n" , HWSAV);
 			System.out.printf("출석 점수     (20) : %.1f\n" , tagAV);
 			System.out.printf("총점 : %.1f\n" , MSAV + FSAV + HWSAV + tagAV);
 			result = "Fail [점수 미달]";
 		} else {
 			System.out.printf("중간 고사 점수(20) : %.1f\n" , MSAV);
-			System.out.printf("기말 고사 점수(20) : %.1f\n" , FSAV);
-			System.out.printf("과제 점수     (20) : %.1f\n" , HWSAV);
+			System.out.printf("기말 고사 점수(30) : %.1f\n" , FSAV);
+			System.out.printf("과제 점수     (30) : %.1f\n" , HWSAV);
 			System.out.printf("출석 점수     (20) : %.1f\n" , tagAV);
 			System.out.printf("총점 : %.1f\n" , MSAV + FSAV + HWSAV + tagAV);
 			result = "PASS";
