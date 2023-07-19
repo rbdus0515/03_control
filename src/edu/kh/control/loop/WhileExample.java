@@ -98,7 +98,6 @@ public class WhileExample {
 			sum += input; // 입력받은 값을 sum에 누적
 		} while (input != 0);
 		
-		System.out.println("정수의 합은 : " + sum);
 			
 		
 		
