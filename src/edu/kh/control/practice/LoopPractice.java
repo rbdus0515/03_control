@@ -104,6 +104,157 @@ public class LoopPractice {
 		}
 	}
 	
+	public void practice6(){
+		
+		// 문제 6
+		// 사용자로부터 입력 받은 숫자의 단부터 9단까지 출력하세요.
+		// 단, 2~9를 사이가 아닌 수를 입력하면 “2~9 사이 숫자만 입력해주세요”를 출력하세요.
+		
+		System.out.print("숫자 입력 : ");
+		int input = sc.nextInt();
+		
+		if(input > 10) {
+			System.out.println("2~9 사이 숫자만 입력해주세요.");
+		} else {
+			for(int dan = input; dan <= input; dan++) {
+				for(int i = 1; i <= 9; i++) {
+					System.out.printf("%d X %d = %2d\n" , dan , i , dan * i);
+				}
+				
+			}
+		}
+		
+		
+		
+		
+	}
+
+	public void practice7(){
+		
+		// 문제 7
+		
+		// *
+		// **
+		// ***
+		// ****
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for(int i = 1; i <= input; i++) { // 줄반복
+			for(int j = 1; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		
+			
+		}
+		
+	}
+
+	public void practice8(){
+		
+		// 문제 8
+		
+		// ****
+		// ***
+		// **
+		// *
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for(int x = input ; x >= 1; x--) { // 줄반복
+			for(int j = x; j >= 1; j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+		
+	}
+	
+	public void practice9(){
+		
+		// 문제 9
+		
+		//    *
+		//   **
+		//  ***
+		// ****
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for(int i = 1; i <= input; i++) {
+			for(int j = input ; j > 0 ; j--) {
+				if( i < j ) {
+					System.out.print(" ");
+				} else {
+					System.out.print("*");
+				}
+			}
+			System.out.println("");
+		}
+		
+		
+		
+	}
+	
+	public void practice10(){
+		
+		// 문제 10
+		
+		// *
+		// **
+		// ***
+		// **
+		// *
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for(int i = 1; i <= input; i++) {
+			for(int j = 1; j <= i; j++) {
+				System.out.print("*");
+				if( i > j) {
+					for(int x = i; x >= 1; x--) {
+						for(int z = x; z >= 1; z--) {
+							System.out.print("*");
+						}
+					}
+				} else {
+					System.out.println();
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+		
+		
+		
+		
+		
+		
+	
+	
+			
+		
+	
+	
+	
+	
+	
 	
 	
 	
