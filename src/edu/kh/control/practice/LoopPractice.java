@@ -217,21 +217,18 @@ public class LoopPractice {
 		System.out.print("정수 입력 : ");
 		int input = sc.nextInt();
 		
-		for(int i = 1; i <= input; i++) {
+		for(int i = 1; i <= input; i++) { // 줄반복
 			for(int j = 1; j <= i; j++) {
 				System.out.print("*");
-				if( i > j) {
-					for(int x = i; x >= 1; x--) {
-						for(int z = x; z >= 1; z--) {
-							System.out.print("*");
-						}
-					}
-				} else {
-					System.out.println();
-				}
 			}
+			System.out.println();
 		}
-		
+		for(int x = input ; x >= 1; x--) { // 줄반복
+			for(int j = x; j >= 1; j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 		
 		
 		
