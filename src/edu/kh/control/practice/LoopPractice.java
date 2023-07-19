@@ -231,15 +231,8 @@ public class LoopPractice {
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
 		}
-		
+	
 	public void practice11() {
 		
 		// 문제 11
@@ -247,11 +240,18 @@ public class LoopPractice {
 		
 		/*  ex.
 			정수 입력 : 4
-		 	*
-		 	***
-		 	*****
-		 	*******
+		      *
+	         ***
+		    *****
+		   *******
 		*/
+		
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		
+		
+		
 		
 	}
 	
