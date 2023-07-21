@@ -261,7 +261,7 @@ public class ForExample {
 		System.out.println("단 입력 : ");
 		int dan = sc.nextInt();
 		
-		if( dan >= 2 && dan <= 19 ) { // dan이 2 ~ 9
+		if( dan >= 2 && dan <= 19 ) { // dan이 2 ~19
 			
 			for(int i = 1; i <= 19;  i++) {
 				System.out.printf("%2d * %2d = %3d\n" , dan , i , dan * i);

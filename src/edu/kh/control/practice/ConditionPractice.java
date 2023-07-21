@@ -37,20 +37,19 @@ public class ConditionPractice {
 		System.out.print("영어점수 : ");
 		int eng = sc.nextInt();
 		
-		String result;
+		double avg = (kor+math+eng)  /3;
 		
-		double avg = (kor+math+eng)/3;
-		
-		if(kor < 40 || math < 40 || eng < 40) {
-			if(avg > 0 || avg < 60) {
-				result = "불합격입니다.";
-		} else {
+		if(kor >= 40 && math >= 40 && eng >= 40 && avg >= 60) {
+			
 			System.out.println("국어 : " + kor);
 			System.out.println("수학 : " + math);
 			System.out.println("영어 : " + eng);
 			System.out.printf("합계 : %d\n" , kor+math+eng);
 			System.out.printf("평균 : %.1f\n" , avg);
-			result = "축하합니다, 합격입니다.";
+			System.out.println("축하합니다, 합격입니다.");
+			
+		} else {
+			System.out.println("불합격입니다.");
 		}
 		
 		
