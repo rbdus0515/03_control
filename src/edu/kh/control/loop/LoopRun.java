@@ -30,8 +30,8 @@ public class LoopRun {
 		//forEx.ex22();
 		//forEx.ex23();
 		
-		WhileExample whileEx = new WhileExample();
 		
+		WhileExample whileEx = new WhileExample();
 		//whileEx.ex1();
 		//whileEx.ex2();
 		whileEx.ex3();

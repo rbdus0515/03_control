@@ -51,10 +51,8 @@ public class ConditionPractice {
 		} else {
 			System.out.println("불합격입니다.");
 		}
-		
-		
-		
 	}
+		
 	
 	public void practice3() {
 		// 문제 3
